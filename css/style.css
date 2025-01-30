@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar-light .navbar-nav #login-finans {
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav #login-finans:hover {
+    text-decoration: underline;
+}
+
+.home {
+    background: #ffc107;
+    color: #fff;
+}
+
+.text-fontsize {
+    font-size: 1em;
+}
+
+.box-finans {
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+footer p#menu-footer a {
+    margin: 5px 15px;
+}
+
+footer p#menu-footer a:hover {
+    text-decoration: none;
+}
