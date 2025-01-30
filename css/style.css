@@ -42,3 +42,11 @@ footer p#menu-footer a {
 footer p#menu-footer a:hover {
     text-decoration: none;
 }
+
+
+
+@media screen and (max-width: 400px) {
+    #input_register {
+        width: 90%;
+    }
+}
