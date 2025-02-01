@@ -88,7 +88,7 @@ header ul li a:hover {
         font-size: 2.5rem;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 365px) {
     div#box_content h1 {
         font-size: 2rem;
     }
