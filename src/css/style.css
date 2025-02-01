@@ -119,6 +119,33 @@ div.box-style a:hover {
 
 }
 
+/* footer */
+
+footer {
+    background: #4C5958;
+    padding: 30px 0;
+}
+
+footer p a {
+    margin: 5px 12px;
+    font-size: 1.3rem;
+    color: #8AA6A3;
+}
+footer p a:hover {
+    text-decoration: none;
+    color: #127369;
+}
+
+#footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#social_media a {
+    margin: 5px 5px;
+}
+
+
 @media screen and (max-width: 700px) {
     #container_cards {
         flex-wrap: wrap;
