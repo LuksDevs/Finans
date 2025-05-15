@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color_primary: #003366;
+    --color_secundary: #3399FF;
+    --color_highlight: #CCCCCC;
+
+    /*
+        Branco (#FFFFFF) – clareza, espaço
+        Preto (#000000) – contraste, sofisticação 
+    */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: var(--color_primary);
+    padding-block: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+    &:hover {
+        color: var(--color_highlight);
+    }
+}
+.nav-link::after {
+    background-color: var(--color_secundary);
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition: .5s ease-in-out;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.btn {
+    border-radius: 6px;
+    font-size: 1.1rem;
+    padding: 6px 15px;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out;
+
+}
+#btn_login {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin-left: 10px;
+
+    &:hover {
+        background-color: #ffffff;
+        color: var(--color_primary);
+    }
+}
+#btn_register {
+    background-color: #ffffff;
+    color: var(--color_primary);
+
+    &:hover {
+        background-color: var(--color_secundary);
+        color: #ffffff;
+    }
+}
+#btn_navbar {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+    outline: none;
+
+    &:hover {
+        color: #3399FF;
+    }
+}
+
+main {
+    background-color: var(--color_highlight);
+
+}
+#home {
+    background-color: var(--color_primary);
+
+}
+
+@media screen and (max-width: 1100px) {
+
+}
