@@ -17,6 +17,7 @@ function activeNavBar() {
 
     blurNavBar.classList.toggle('active');
     navbar.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
 }
 
 bindEvents();
