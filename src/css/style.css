@@ -4,11 +4,7 @@
     --color_primary: #003366;
     --color_secundary: #3399FF;
     --color_highlight: #CCCCCC;
-
-    /*
-        Branco (#FFFFFF) – clareza, espaço
-        Preto (#000000) – contraste, sofisticação 
-    */
+    --color_text: #373940;
 }
 
 * {
@@ -27,13 +23,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 10px;
+    padding-inline: 20px;
     max-width: 1100px;
     margin-inline: auto;
 }
 
 .navbar-nav {
     display: flex;
+    align-items: center;
     gap: 20px;
     list-style: none;
 }
@@ -70,7 +67,10 @@ header {
     padding: 6px 15px;
     text-decoration: none;
     transition: background-color .5s ease-in-out;
-
+}
+.btn-list {
+    display: flex;
+    gap: 20px;
 }
 #btn_login {
     background-color: transparent;
@@ -102,19 +102,277 @@ header {
     outline: none;
 
     &:hover {
-        color: #3399FF;
+        color: var(--color_secundary);
+    }
+}
+#close_navbar {
+    display: none;
+}
+.blur-navbar {
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+/* estilizações gerais */
+main {
+    background-color: var(--color_highlight);
+}
+.container-contents {
+    max-width: 80%;
+    margin-inline: auto;
+}
+.btn-more {
+    background-color: var(--color_primary);
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: .3s;
+
+    &:hover {
+        background-color: var(--color_secundary);
+    }
+}
+.content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.content p {
+    color: var(--color_text);
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+.image-content img {
+    width: 100%;
+}
+.line {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0, 51, 102, 0.1);
+}
+
+/* Conteúdos da Home - Início*/
+#home {
+    background-color: var(--color_primary);
+}
+
+#home > .container-contents {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    height: 600px;
+}
+.home-content {
+    color: #ffffff;
+}
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+.home-content p {
+    font-size: .9rem;
+}
+.home-image {
+    height: 600px;
+    position: relative;
+}
+.home-image img {
+    display: block;
+    margin-inline: auto;
+    height: 100%;
+}
+.register-email {
+    display: grid;
+    grid-template-columns: 2fr 150px;
+    margin-top: 20px;
+}
+.register-email input {
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px;
+}
+.register-email button {
+    background-color: var(--color_secundary);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: .3s;
+
+    &:hover {
+        background-color: #1F598C;
+    }
+}
+.icon-home {
+    display: flex;
+    margin-top: 15px
+}
+.icon-app {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;    
+    padding: 5px;
+    margin-left: 10px;
+
+    &:hover {
+        background-color: #fff;
+        color: var(--color_text);
+    }
+}
+/* Conteúdo saiba */
+#know > .container-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* Conteúdos Juros */
+#fees > .container-contents {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    gap: 70px;
+    align-items: center;
+}
+
+/* Conteúdos Cards */
+#cards > .container-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px 0;
+}
+.cards img {
+    width: 100%;
+}
+.cards h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+.cards p {
+    color: #373940;
+    font-size: .9rem;
+}
+/* Footer */
+footer {
+    padding: 30px 0;
+    border-top: 1px solid rgba(0, 51, 102, 0.1);
+}
+footer > .container-contents {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.footer-navbar .footer-link {
+    color: var(--color_text);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--color_secundary);
+    }
+}
+.icon-footer {
+    display: flex;
+    gap: 10px;
+}
+.icon-footer i {
+    border-radius: 5px;
+    border: 1px solid var(--color_primary);
+    color: var(--color_primary);
+    padding: 5px;
+
+    &:hover {
+        border: 1px solid var(--color_secundary);
+        color: var(--color_secundary);
     }
 }
 
-main {
-    background-color: var(--color_highlight);
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    #btn_navbar {
+        display: block;
+    }
+    #btn_login {
+        background-color: var(--color_primary);
+        color: #ffff;
+        transition: box-shadow .3s ease-in-out;
 
-}
-#home {
-    background-color: var(--color_primary);
+        &:hover {
+            background-color: var(--color_primary);
+            color: #fff;
+            box-shadow: 0 0 8px rgba(0,0,0,0.5);
+        }
+    }
+    #btn_register {
+        background-color: transparent;
 
-}
+        &:hover {
+            background-color: transparent;
+            color: var(--color_secundary);
+        }
+    }
+    #close_navbar {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--color_primary);
+        display: block;
+        font-size: 1.1rem;
+        position: absolute;
+        right: 10px;
+        top: 20px;
 
-@media screen and (max-width: 1100px) {
+        &:hover {
+            color: var(--color_secundary);
+        }
+    }
+    .container-navbar {
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        width: 250px;
+        transition: left .5s ease-in-out;
+        z-index: 1000;
+    }
+    .container-navbar.active {
+        left: 0;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-block-start: 60px;
+    }
+    .nav-link {
+        color: var(--color_primary);
+        font-size: 1.2rem;
 
+        &:hover {
+            color: var(--color_secundary);
+        }
+    }
+    .btn-list {
+        gap: 0;
+        margin-top: 20px;
+    }
+    .blur-navbar.active {
+        display: block;
+    }
 }

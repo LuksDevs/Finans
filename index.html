@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Finans - Finanças Pessoais</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -19,24 +23,110 @@
             <button type="button" id="btn_navbar">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-house"></i> Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-piggy-bank"></i> Recursos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-sack-dollar"></i> Benefícios</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-coins"></i> Preços</a></li>
-                <li class="nav-item"><a href="#" id="btn_login" class="btn"><i class="fa-solid fa-right-to-bracket"></i> Entrar</a></li>
-                <li class="nav-item"><a href="#" id="btn_register" class="btn"><i class="	fa-solid fa-plus-user"></i> Cadastro</a></li>
-            </ul>
+            <div class="container-navbar">
+                <button type="button" id="close_navbar"><i class="fa-solid fa-x"></i></button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-house"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-piggy-bank"></i> Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-sack-dollar"></i> Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-coins"></i> Preços</a>
+                    </li>
+                    <li class="btn-list">
+                        <a href="#" id="btn_login" class="btn"><i class="fa-solid fa-right-to-bracket"></i> Entrar</a>
+                        <a href="#" id="btn_register" class="btn"><i class="fa-solid fa-plus-user"></i> Cadastro</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <div class="blur-navbar"></div>
     </header>
     <main>
         <section id="home">
-            <div class="container-home">
+            <div class="container-contents">
                 <div class="home-content">
-
+                    <h1>Suas contas, descomplicadas</h1>
+                    <p>Usado por mais de 1 milhão de pessoas, O Finans é uma ferreamenta online que vai facilicar sua vida financeira.</p>
+                    <div class="register-email">
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        <button type="button">Cadastre-se</button>
+                    </div>
+                    <div class="icon-home">
+                        <p>Disponível para:</p>
+                        <a href="#" class="icon-app"><i class="fa-brands fa-android"></i></a>
+                        <a href="#" class="icon-app"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="assets/image/home.png" alt="Finans Home">
                 </div>
             </div>
         </section>
+        <section id="know" class="line">
+            <div class="container-contents">
+                <div class="content">
+                    <h2>Saiba para onde vai seu dinheiro</h2>
+                    <p>Com o Finans, você cotegoriza todos os seus lançamentos. Com gráficos simples, você sobe de onde vem e para onde vai o seu dinheiro.</p>
+                    <a href="#" class="btn-more">Veja mais</a>
+                </div>
+                <div class="image-content">
+                    <img src="assets/image/saiba.png" alt="saiba">
+                </div>
+            </div>
+        </section>
+        <section id="fees" class="line">
+            <div class="container-contents">
+                <div class="image-content">
+                    <img src="assets/image/juros.png" alt="Juros">
+                </div>
+                <div class="content">
+                    <h2>Pare de pagar juros e economize</h2>
+                    <p>Manter as contas em dia é sempre um problema? O organize avisa você: receba alertas de contas a pagar e a receber</p>
+                    <a href="#" class="btn-more">Veja mais</a>
+                </div>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="container-contents">
+                <div class="cards">
+                    <img src="assets/image/facil.png" alt="Card Facil">
+                    <h3>Fácil de usar</h3>
+                    <p>O finans vai além do básico e permite que você faça controles incriveis, essencias para suas finanças. Simples e como tem que ser!</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/image/economize.png" alt="Card Economize">
+                    <h3>Economize seu tempo</h3>
+                    <p>Tempo é dinheiro! Em segundos, você tem tudo sob controle e aproveite seu tempo com o que realmente importa pra você!</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/image/suporte.png" alt="Card Suporte">
+                    <h3>Suporte amigo</h3>
+                    <p>Dúvidas? Perguntas? Nosso suporte super legal ajuda você! A gente tá aqui pra resolver seus problemas e deixar sua vida bem mais fácil!</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-contents">
+                <ul class="footer-navbar">
+                    <li><a href="" class="footer-link"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="" class="footer-link"><i class="fa-solid fa-piggy-bank"></i> Recursos</a></li>
+                    <li><a href="" class="footer-link"><i class="fa-solid fa-sack-dollar"></i> Benefícios</a></li>
+                    <li><a href="" class="footer-link"><i class="fa-solid fa-coins"></i> Preços</a></li>
+                </ul>
+                <div class="icon-footer">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
     </main>
+    <script src="src/js/navbar.js" defer></script>
 </body>
 </html>
